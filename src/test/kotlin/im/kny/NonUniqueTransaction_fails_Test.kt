@@ -25,7 +25,7 @@ class NonUniqueTransaction_fails_Test {
         val tx1 = em1.transaction
         tx1.begin()
 
-        val tx2 = em1.transaction
+        val tx2 = em2.transaction
         tx2.begin()
 
         try {
